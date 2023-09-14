@@ -1,5 +1,5 @@
 {% set name = "gcloud-aio-pubsub" %}
-{% set version = "5.4.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_pubsub-{{ version }}.tar.gz
-  sha256: 6a93fa55323d04cdbd1df48564b1c2e0cc1273d995222747546a3776c49b55a4
+  sha256: 72146a0573ff7c69cdb9d31f79701588105ddc0383e663d4b49b148786fc0819
 
 build:
   noarch: python
@@ -16,14 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
-    - pip
+    - python >=3.8,<4.0
     - poetry-core >=1.0.0
+    - pip
   run:
-    - python >=3.7,<4.0
-    - gcloud-aio-auth >=3.3.0,<5.0.0
+    - python >=3.8,<4.0
+    - gcloud-aio-auth >=3.3.0,<6.0.0
     - prometheus_client >=0.13.1,<1.0.0
-    - setuptools >=66.0.0,<67.0.0
 
 test:
   imports:
