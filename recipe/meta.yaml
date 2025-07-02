@@ -1,5 +1,5 @@
 {% set name = "gcloud-aio-pubsub" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_pubsub-{{ version }}.tar.gz
-  sha256: c93b8d5470994ffcf122776cb12d0a842d3b080d287957505df69a198be390cc
+  sha256: f4452a50422a5550e0bd0cfedd52e22538941cba4473873c61c40869fc9ea082
 
 build:
   noarch: python
