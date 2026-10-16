@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gcloud-aio-pubsub
-  version: "7.0.0"
+  version: "8.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gcloud_aio_pubsub-${{ version }}.tar.gz
-  sha256: 469c965a3031ceef7e4fe8426f5ca61565942836d3dd0b3537977508e3b204a1
+  sha256: ec7a8d14ad259db4cf545d679f682a99836394783e9413afc66089debf906afe
 
 build:
   number: 0
