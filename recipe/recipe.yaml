@@ -32,7 +32,9 @@ tests:
       imports:
         - gcloud.aio.pubsub
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Python Client for Google Cloud Pub/Sub
